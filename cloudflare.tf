@@ -25,6 +25,7 @@ resource "cloudflare_record" "www" {
     value = "creative-lolly-f1071b.netlify.app"
     type = "CNAME"
     proxied = true
+    allow_overwrite = true
 }
 
 resource "cloudflare_record" "root" {
@@ -33,4 +34,5 @@ resource "cloudflare_record" "root" {
     value = "creative-lolly-f1071b.netlify.app"
     type = "CNAME"
     proxied = true
+    allow_overwrite = true
 }
